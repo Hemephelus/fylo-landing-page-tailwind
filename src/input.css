@@ -5,3 +5,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navmb {
+    @apply flex p-5 justify-between items-center;
+}
+
+
+.navlinks {
+    @apply hover:border-b-2 hover:border-white;
+}
+
+.btn {
+    @apply cursor-pointer flex items-center justify-center relative;
+}
+
+.btn::before {
+    position: absolute;
+    z-index: -1;
+    transition: 0.2s;
+    content: '';
+    border-bottom: 1px solid white;
+    height: 100%;
+    width: 0%;
+}
+
+.btn:hover::before {
+    width: 100%;
+}
