@@ -32,3 +32,15 @@
 .btn:hover::before {
     width: 100%;
 }
+.ftTitle{
+    @apply pt-8 pb-2 font-bold text-xl desktop:text-2xl ;
+}
+
+
+.ftBody{
+    @apply font-body;
+}
+
+.featureCard{
+    @apply flex flex-col items-center text-center z-10 text-white px-4.5 desktop:px-40;
+}
