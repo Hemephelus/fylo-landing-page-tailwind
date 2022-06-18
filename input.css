@@ -21,7 +21,7 @@
 
 .btn::before {
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     transition: 0.2s;
     content: '';
     border-bottom: 1px solid white;
@@ -42,5 +42,30 @@
 }
 
 .featureCard{
-    @apply flex flex-col items-center text-center z-10 text-white px-4.5 desktop:px-40;
+   @apply flex flex-col items-center text-center z-10 text-white px-4 desktop:px-10;
+}
+
+.testCards{
+    @apply flex flex-col gap-4 bg-primary-TestBg shadow-xl rounded mx-8 z-10 text-white leading-loose py-6 px-6;
+
+}
+
+.testCardP1{
+    @apply text-xs font-body font-light;
+}
+
+.testProfile{
+    @apply rounded-full w-8;
+}
+
+.testName{
+    @apply text-sm font-bold;
+}
+
+.testDetails{
+    @apply flex gap-4;
+}
+
+.testTitle{
+  @apply  text-xs font-body;
 }
