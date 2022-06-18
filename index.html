@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="./output.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./output.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
 </head>
 
 
@@ -28,35 +36,51 @@
 <body class="font-header bg-primary-SignBg">
 
 
-  <nav class="navmb md:p-10">
-    <img src="./images/logo.svg" alt="logo" class="object-contain h-15 w-24 md:w-44 md:h-30  md:object-contain">
-    <div class="flex gap-5 md:gap-12 text-white text-sm">
-      <!-- The active effect link codepen.io/chancesq/pen/qBOyQoW -->
-      <a  href="#" class="btn">  Features
+    <nav class="navmb md:p-10">
+        <img src="./images/logo.svg" alt="logo" class="object-contain h-15 w-24 md:w-44 md:h-30  md:object-contain">
+        <div class="flex gap-5 md:gap-12 text-white text-sm">
+            <!-- The active effect link codepen.io/chancesq/pen/qBOyQoW -->
+            <a href="#" class="btn">  Features
         </a>
-      <a href="#" class="btn">Team
+            <a href="#" class="btn">Team
         </a>
-      <a href="#" class="btn">Sign In</a>
-    </div>
-  </nav>
+            <a href="#" class="btn">Sign In</a>
+        </div>
+    </nav>
+
+
+    <main class="flex items-center md:px-24 lg:px-32  font-header text-white flex-col">
+
+        <div class="flex flex-col items-center z-10">
+            <figure class="p-8 md:p-12">
+                <img src="./images/illustration-intro.png" alt="">
+            </figure>
+            <h1 class="text-2xl text-center font-bold px-8 md:px-48 md:text-4xl">
+                All your files in one secure location, accessible anywhere.
+            </h1>
+        </div>
+
+        <div class=" h-96 w-full bg-no-repeat font-body object-fill relative z-20">
+            <!-- bg-[url('./images/bg-curvy-desktop.svg')] -->
+            <div class="mx-3.5 md:mx-16 lg:mx-80">
+                <p class="  py-5 text-center ">
+                    Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.
+                </p>
+            </div>
+           
+        </div>
+
+        <div class="absolute z-0 -bottom-96 left-10">
+          <img src="./images/bg-curvy-desktop.svg" alt="" class="">
+    
+      </div>
+        
+
+    </main>
 
  
-  <main class="flex items-center md:px-24 lg:px-32  font-header text-white flex-col">
-    <figure class="p-8 md:p-12">
-      <img src="./images/illustration-intro.png" alt="" >
-    </figure>
-    <h1 class="text-2xl text-center font-bold px-8 md:px-40 md:text-4xl">
-      All your files in one secure location, accessible anywhere.
-    </h1>
 
-    
-
-    <img src="./images/bg-curvy-desktop.svg" alt="">
-  </main>
-
-  
-
-  <!-- 
+    <!-- 
   
 
   Get Started
@@ -131,11 +155,12 @@
   Terms
   Privacy -->
 
-  <footer>
-    <!-- <p class="attribution">
+    <footer>
+        <!-- <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p> -->
-  </footer>
+    </footer>
 </body>
+
 </html>
