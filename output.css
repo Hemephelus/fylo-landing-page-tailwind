@@ -648,20 +648,8 @@ video {
   z-index: 0;
 }
 
-.m-4{
-  margin: 1rem;
-}
-
-.m-6{
-  margin: 1.5rem;
-}
-
-.m-8{
-  margin: 2rem;
-}
-
-.m-16{
-  margin: 4rem;
+.col-span-2{
+  grid-column: span 2 / span 2;
 }
 
 .mx-3\.5{
@@ -674,59 +662,26 @@ video {
   margin-right: 0.75rem;
 }
 
-.mx-8{
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
 .mx-6{
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
 
-.my-8{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.my-16{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .mt-44{
   margin-top: 11rem;
 }
 
-.mt-40{
-  margin-top: 10rem;
-}
-
 .mt-48{
   margin-top: 12rem;
 }
 
-.ml-2{
-  margin-left: 0.5rem;
-}
-
-.ml-1{
-  margin-left: 0.25rem;
-}
-
 .mr-2{
   margin-right: 0.5rem;
-}
-
-.mr-4{
-  margin-right: 1rem;
-}
-
-.mr-3{
-  margin-right: 0.75rem;
-}
-
-.mr-3\.5{
-  margin-right: 0.875rem;
-}
-
-.mb-16{
-  margin-bottom: 4rem;
 }
 
 .mt-16{
@@ -745,10 +700,6 @@ video {
   display: contents;
 }
 
-.h-8{
-  height: 2rem;
-}
-
 .h-40{
   height: 10rem;
 }
@@ -765,42 +716,8 @@ video {
   width: 3rem;
 }
 
-.w-14{
-  width: 3.5rem;
-}
-
-.w-1{
-  width: 0.25rem;
-}
-
-.w-16{
-  width: 4rem;
-}
-
-.w-fit{
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.w-full{
-  width: 100%;
-}
-
 .w-40{
   width: 10rem;
-}
-
-.shrink{
-  flex-shrink: 1;
-}
-
-.shrink-0{
-  flex-shrink: 0;
-}
-
-.grow{
-  flex-grow: 1;
 }
 
 .transform{
@@ -847,12 +764,16 @@ video {
   gap: 0.5rem;
 }
 
-.gap-3{
-  gap: 0.75rem;
+.gap-12{
+  gap: 3rem;
 }
 
 .gap-6{
   gap: 1.5rem;
+}
+
+.gap-10{
+  gap: 2.5rem;
 }
 
 .rounded-full{
@@ -939,19 +860,14 @@ video {
   padding-right: 3.5rem;
 }
 
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.py-12{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-44{
@@ -980,10 +896,6 @@ video {
 
 .pr-16{
   padding-right: 4rem;
-}
-
-.pb-16{
-  padding-bottom: 4rem;
 }
 
 .text-left{
@@ -1225,6 +1137,10 @@ video {
   line-height: 1rem;
 }
 
+.footLink:hover{
+  font-weight: 700;
+}
+
 .hover\:bg-accent-CyaneGrd:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(101 226 217 / var(--tw-bg-opacity));
@@ -1252,6 +1168,10 @@ video {
     top: 0px;
   }
 
+  .md\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
   .md\:mx-44{
     margin-left: 11rem;
     margin-right: 11rem;
@@ -1265,12 +1185,38 @@ video {
     width: 8rem;
   }
 
+  .md\:w-fit{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .md\:w-12{
+    width: 3rem;
+  }
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-5{
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-6{
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
   .md\:grid-rows-2{
     grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
   }
 
   .md\:place-items-center{
@@ -1283,6 +1229,14 @@ video {
 
   .md\:gap-8{
     gap: 2rem;
+  }
+
+  .md\:gap-0{
+    gap: 0px;
+  }
+
+  .md\:gap-4{
+    gap: 1rem;
   }
 
   .md\:object-contain{
@@ -1313,8 +1267,53 @@ video {
     padding-right: 5rem;
   }
 
+  .md\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .md\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .md\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .md\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .md\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
   .md\:pr-44{
     padding-right: 11rem;
+  }
+
+  .md\:pr-12{
+    padding-right: 3rem;
+  }
+
+  .md\:pr-16{
+    padding-right: 4rem;
+  }
+
+  .md\:pr-32{
+    padding-right: 8rem;
+  }
+
+  .md\:pr-2{
+    padding-right: 0.5rem;
+  }
+
+  .md\:pr-24{
+    padding-right: 6rem;
   }
 
   .md\:text-4xl{
@@ -1393,5 +1392,41 @@ video {
 
   .desktop\:pr-0{
     padding-right: 0px;
+  }
+
+  .desktop\:pr-32{
+    padding-right: 8rem;
+  }
+
+  .desktop\:pr-40{
+    padding-right: 10rem;
+  }
+
+  .desktop\:pr-48{
+    padding-right: 12rem;
+  }
+
+  .desktop\:pl-48{
+    padding-left: 12rem;
+  }
+
+  .desktop\:pl-12{
+    padding-left: 3rem;
+  }
+
+  .desktop\:pl-32{
+    padding-left: 8rem;
+  }
+
+  .desktop\:pl-3{
+    padding-left: 0.75rem;
+  }
+
+  .desktop\:pl-28{
+    padding-left: 7rem;
+  }
+
+  .desktop\:pl-24{
+    padding-left: 6rem;
   }
 }

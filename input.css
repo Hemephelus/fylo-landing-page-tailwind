@@ -69,3 +69,7 @@
 .testTitle{
   @apply  text-xs font-body;
 }
+
+.footLink{
+    @apply hover:font-bold;
+}
