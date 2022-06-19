@@ -22,7 +22,6 @@ module.exports = {
           errorClr: '#ff4242',
           blueGrd: '#339ecc',
           CyaneGrd: '#65e2d9',
-          CyaneGrdH:'#a3f2ed',
         },
       },
       fontFamily:{

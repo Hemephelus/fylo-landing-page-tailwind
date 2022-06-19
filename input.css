@@ -1,15 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 .navmb {
     @apply flex p-5 justify-between items-center;
 }
-
 
 .navlinks {
     @apply hover:border-b-2 hover:border-white;
@@ -32,44 +28,47 @@
 .btn:hover::before {
     width: 100%;
 }
-.ftTitle{
-    @apply pt-8 pb-2 font-bold text-xl desktop:text-2xl ;
+
+.ftTitle {
+    @apply pt-8 pb-2 font-bold text-xl desktop:text-2xl;
 }
 
-
-.ftBody{
+.ftBody {
     @apply font-body;
 }
 
-.featureCard{
-   @apply flex flex-col items-center text-center z-10 text-white px-4  desktop:px-10;
+.featureCard {
+    @apply flex flex-col items-center text-center z-10 text-white px-4 desktop:px-10;
 }
 
-.testCards{
+.testCards {
     @apply flex flex-col gap-4 bg-primary-TestBg shadow-xl rounded mx-8 md:mx-0 md:px-10 z-10 text-white leading-loose py-6 px-6;
-
 }
 
-.testCardP1{
+.testCardP1 {
     @apply text-xs font-body font-light;
 }
 
-.testProfile{
+.testProfile {
     @apply rounded-full w-8;
 }
 
-.testName{
+.testName {
     @apply text-sm font-bold;
 }
 
-.testDetails{
+.testDetails {
     @apply flex gap-4;
 }
 
-.testTitle{
-  @apply  text-xs font-body;
+.testTitle {
+    @apply text-xs font-body;
 }
 
-.footLink{
+.footLink {
     @apply hover:font-bold;
+}
+
+.socialIcons {
+    @apply w-6 md:w-8 h-6 md:h-8 rounded-full border flex items-center justify-center hover:text-accent-CyaneGrd hover:border-accent-CyaneGrd cursor-pointer;
 }

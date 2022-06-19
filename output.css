@@ -648,10 +648,6 @@ video {
   z-index: 0;
 }
 
-.col-span-2{
-  grid-column: span 2 / span 2;
-}
-
 .mx-3\.5{
   margin-left: 0.875rem;
   margin-right: 0.875rem;
@@ -670,6 +666,11 @@ video {
 .my-16{
   margin-top: 4rem;
   margin-bottom: 4rem;
+}
+
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .mt-44{
@@ -700,10 +701,6 @@ video {
   display: contents;
 }
 
-.h-40{
-  height: 10rem;
-}
-
 .w-24{
   width: 6rem;
 }
@@ -716,10 +713,6 @@ video {
   width: 3rem;
 }
 
-.w-40{
-  width: 10rem;
-}
-
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -730,10 +723,6 @@ video {
 
 .flex-col{
   flex-direction: column;
-}
-
-.flex-wrap{
-  flex-wrap: wrap;
 }
 
 .items-center{
@@ -764,16 +753,12 @@ video {
   gap: 0.5rem;
 }
 
-.gap-12{
-  gap: 3rem;
+.gap-10{
+  gap: 2.5rem;
 }
 
 .gap-6{
   gap: 1.5rem;
-}
-
-.gap-10{
-  gap: 2.5rem;
 }
 
 .rounded-full{
@@ -810,10 +795,6 @@ video {
 
 .fill-accent-CyaneGrd{
   fill: #65e2d9;
-}
-
-.fill-blue-500{
-  fill: #3b82f6;
 }
 
 .object-contain{
@@ -863,11 +844,6 @@ video {
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .pb-44{
@@ -1141,13 +1117,34 @@ video {
   font-weight: 700;
 }
 
+.socialIcons{
+  display: flex;
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border-width: 1px;
+}
+
+.socialIcons:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(101 226 217 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(101 226 217 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .socialIcons{
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
 .hover\:bg-accent-CyaneGrd:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(101 226 217 / var(--tw-bg-opacity));
-}
-
-.hover\:fill-accent-CyaneGrd:hover{
-  fill: #65e2d9;
 }
 
 .hover\:text-white:hover{
@@ -1177,6 +1174,11 @@ video {
     margin-right: 11rem;
   }
 
+  .md\:my-24{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+
   .md\:w-44{
     width: 11rem;
   }
@@ -1185,30 +1187,12 @@ video {
     width: 8rem;
   }
 
-  .md\:w-fit{
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-
-  .md\:w-12{
-    width: 3rem;
-  }
-
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-4{
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-6{
-    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .md\:grid-rows-2{
@@ -1229,10 +1213,6 @@ video {
 
   .md\:gap-8{
     gap: 2rem;
-  }
-
-  .md\:gap-0{
-    gap: 0px;
   }
 
   .md\:gap-4{
@@ -1267,21 +1247,6 @@ video {
     padding-right: 5rem;
   }
 
-  .md\:px-16{
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-
-  .md\:px-12{
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
-  .md\:px-4{
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
   .md\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
@@ -1294,22 +1259,6 @@ video {
 
   .md\:pr-44{
     padding-right: 11rem;
-  }
-
-  .md\:pr-12{
-    padding-right: 3rem;
-  }
-
-  .md\:pr-16{
-    padding-right: 4rem;
-  }
-
-  .md\:pr-32{
-    padding-right: 8rem;
-  }
-
-  .md\:pr-2{
-    padding-right: 0.5rem;
   }
 
   .md\:pr-24{
@@ -1392,38 +1341,6 @@ video {
 
   .desktop\:pr-0{
     padding-right: 0px;
-  }
-
-  .desktop\:pr-32{
-    padding-right: 8rem;
-  }
-
-  .desktop\:pr-40{
-    padding-right: 10rem;
-  }
-
-  .desktop\:pr-48{
-    padding-right: 12rem;
-  }
-
-  .desktop\:pl-48{
-    padding-left: 12rem;
-  }
-
-  .desktop\:pl-12{
-    padding-left: 3rem;
-  }
-
-  .desktop\:pl-32{
-    padding-left: 8rem;
-  }
-
-  .desktop\:pl-3{
-    padding-left: 0.75rem;
-  }
-
-  .desktop\:pl-28{
-    padding-left: 7rem;
   }
 
   .desktop\:pl-24{

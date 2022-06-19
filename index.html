@@ -2,25 +2,12 @@
 <html lang="en">
 
 <head>
+    <script src="https://kit.fontawesome.com/19e9a4a3c1.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="./output.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-    <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-        .attribution {
-            font-size: 11px;
-            text-align: center;
-        }
-        
-        .attribution a {
-            color: hsl(228, 45%, 44%);
-        }
-    </style>
+    <title>Frontend Assignment| Responsive</title>
 </head>
 
 
@@ -240,76 +227,79 @@
         </div>
 
         <div class="mt-48 mx-6 grid grid-cols-1 md:grid-cols-5 md:px-8 md:gap-8">
-          <div class="flex flex-col gap-10 md:col-span-2 desktop:pl-24">
-            <figure>
-                <img src="./images/logo.svg" alt="">
-            </figure>
-            <div class="flex gap-6 text-sm font-body mr-2 md:pr-24 ">
+            <div class="flex flex-col gap-10 md:col-span-2 desktop:pl-24">
                 <figure>
-                    <img src="./images/icon-location.svg" class="w-12" alt="">
+                    <img src="./images/logo.svg" alt="">
                 </figure>
-                <p>
-                    
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-  dolore magna aliqua
-                </p>
+                <div class="flex gap-6 text-sm font-body mr-2 md:pr-24 ">
+                    <figure>
+                        <img src="./images/icon-location.svg" class="w-12" alt="">
+                    </figure>
+                    <p>
+
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    </p>
+                </div>
             </div>
-          </div>
-          <div class="font-body py-6 md:py-8 flex flex-col gap-6 my-16">
-            <div class="flex gap-6">
-                <figure>
-                    <img src="./images/icon-phone.svg"  alt="">
-                </figure>
-                <p>
-                  +1-543-123-4567
-                </p>
+            <div class="font-body py-6 md:py-8 flex flex-col gap-6 my-16">
+                <div class="flex gap-6">
+                    <figure>
+                        <img src="./images/icon-phone.svg" alt="">
+                    </figure>
+                    <p>
+                        +1-543-123-4567
+                    </p>
+                </div>
+
+                <div class="flex gap-6">
+                    <figure><img src="./images/icon-email.svg" alt=""></figure>
+                    <p>
+
+                        example@fylo.com
+                    </p>
+                </div>
+            </div>
+            <div class="font-body flex flex-col md:flex-row gap-16 md:gap-8 mt-16 md:py-8">
+                <div class="flex flex-col gap-4 text-lg ">
+                    <a href="" class="footLink">About Us</a>
+                    <a href="" class="footLink"> Jobs</a>
+                    <a href="" class="footLink">  Press</a>
+                    <a href="" class="footLink">Blog</a>
+                </div>
+                <div class="flex flex-col gap-4 text-lg">
+                    <a href="" class="footLink">Contact Us</a>
+                    <a href="" class="footLink">Terms</a>
+                    <a href="" class="footLink">Privacy</a>
+
+                </div>
             </div>
 
-            <div class="flex gap-6">
-                <figure><img src="./images/icon-email.svg" alt=""></figure>
-                <p>
-                   
-                    example@fylo.com
-                </p>
-            </div>
-          </div>
-          <div class="font-body flex flex-col md:flex-row gap-16 md:gap-8 mt-16 md:py-8">
-            <div class="flex flex-col gap-4 text-lg ">
-                <a href="" class="footLink">About Us</a>
-                <a href="" class="footLink"> Jobs</a>
-                <a href="" class="footLink">  Press</a>
-                <a href="" class="footLink">Blog</a>
-            </div>
-            <div class="flex flex-col gap-4 text-lg">
-                <a href="" class="footLink">Contact Us</a>
-                <a href="" class="footLink">Terms</a>
-                <a href="" class="footLink">Privacy</a>              
-                
-            </div>
-          </div>
-       
 
-          <!-- <div class="z-10">
-            <figure class="">
-             <svg class="fill-blue-500 w-40 h-40 hover:fill-accent-CyaneGrd  ">
-                <use href="#facebook"></use>
- 
-             </svg>
-            </figure>
-            <figure></figure>
-            <figure></figure>
-          </div> -->
+            <div class="text-white flex gap-2 md:gap-4 justify-center my-8 md:my-24">
+                <figure class="socialIcons">
+
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                </figure>
+
+                <figure class="socialIcons">
+
+                    <i class="fa-brands fa-twitter"></i>
+
+                </figure>
+                <figure class="socialIcons">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                </figure>
+
+
+            </div>
         </div>
-        <!--
 
-        <svg  xmlns="http://www.w3.org/2000/svg" class="ionicon absolute z-0" viewBox="0 0 512 512" >
-            <symbol id="facebook">
-             <title>Logo Facebook</title><path d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z" fill-rule="evenodd"/>
-         </symbol> -->
-         </svg>
     </footer>
 
-    
+
 </body>
 
 </html>
