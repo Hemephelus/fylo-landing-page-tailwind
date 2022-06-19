@@ -72,7 +72,7 @@
 
 
 
-        <button class="z-10 bg-accent-CyaneGrd rounded-full font-bold px-20 py-4 hover:bg-accent-CyaneGrdH">
+        <button class="z-10 bg-accent-blueGrd rounded-full font-bold px-20 py-4 hover:bg-accent-CyaneGrd">
             Get Started
         </button>
 
@@ -136,10 +136,11 @@
             <img src="./images/illustration-stay-productive.png" alt="">
         </figure>
         <div class="flex flex-col gap-4">
-            <h1 class="ftTitle">
+            <h1 class="text-xl md:text-4xl font-bold desktop:pr-72">
                 Stay productive, wherever you are
             </h1>
-            <div class="ftBody flex flex-col gap-4">
+
+            <div class="ftBody flex flex-col gap-4 md:pr-44">
                 <p>
                     Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.
                 </p>
@@ -164,18 +165,30 @@
     </div>
 
     <!-- Testimony Cards -->
-    <div class="grid grid-cols-1 bg-primary-MainBg gap-8 relative pt-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 desktop:grid-cols-4 bg-primary-MainBg gap-2 md:gap-8 relative pt-8 md:px-48 pb-96">
 
-        <figure class="absolute z-0 w-8 left-10 top-3">
+        <figure class="absolute z-0 w-8 left-9 top-3 md:left-44 md:top-0 md:w-32">
             <img src="./images/bg-quotes.png" alt="">
         </figure>
-        <div class="testCards">
+        <div class="testCards relative">
 
             <p class="testCardP1"> Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
             <div class="testDetails">
                 <figure><img class="testProfile" src="./images/profile-1.jpg" alt=""></figure>
                 <div>
                     <h1 class="testName">Satish Patel</h1>
+                    <p class="testTitle">Founder & CEO, Huddle</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="testCards">
+
+            <p class="testCardP1"> Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+            <div class="testDetails">
+                <figure><img class="testProfile" src="./images/profile-2.jpg" alt=""></figure>
+                <div>
+                    <h1 class="testName">Bruce McKenzie</h1>
                     <p class="testTitle">Founder & CEO, Huddle</p>
                 </div>
             </div>
@@ -204,19 +217,43 @@
                 </div>
             </div>
         </div>
-
     </div>
 
 
-    <!--
+
+    <footer class="text-white bg-primary-FootBg relative flex justify-center">
 
 
-  Get early access today
+        <div class="bg-primary-SignBg rounded-xl absolute -top-44 m-4 md:mx-44 desktop:mx-80 shadow-2xl flex flex-col gap-4 md:gap-8 items-center text-center px-10 pt-12 pb-8">
 
-  It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
-  questions, our support team would be happy to help you.
+            <h1 class="text-base text-center md:text-3xl font-bold">Get early access today</h1>
+            <p class="testTitle md:text-sm md:px-20 desktop:px-8">
+                It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.
+            </p>
+            <form class="gap-4 items-center grid grid-cols-1 desktop:grid-cols-3 ">
+                <input type="text" placeholder="email@example.com" class="rounded-full focus:outline-0 text-black pl-6 pr-16 desktop:pr-0 py-4 text-xs text-left desktop:col-span-2">
+                <button class="text-xs z-0 bg-accent-blueGrd rounded-full font-bold px-14 py-4 hover:bg-accent-CyaneGrd">
+                    Get Started For Free
+                </button>
+            </form>
+        </div>
 
-  Get Started For Free
+        <div class="mt-40">
+          <div>
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <!--
+
+
+  
+
+  
+
+ 
 
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
   dolore magna aliqua
@@ -232,12 +269,6 @@
   Contact Us
   Terms
   Privacy -->
-
-    <footer>
-        <!-- <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p> -->
     </footer>
 </body>
 

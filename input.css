@@ -42,11 +42,11 @@
 }
 
 .featureCard{
-   @apply flex flex-col items-center text-center z-10 text-white px-4 desktop:px-10;
+   @apply flex flex-col items-center text-center z-10 text-white px-4  desktop:px-10;
 }
 
 .testCards{
-    @apply flex flex-col gap-4 bg-primary-TestBg shadow-xl rounded mx-8 z-10 text-white leading-loose py-6 px-6;
+    @apply flex flex-col gap-4 bg-primary-TestBg shadow-xl rounded mx-8 md:mx-0 md:px-10 z-10 text-white leading-loose py-6 px-6;
 
 }
 
