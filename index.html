@@ -33,7 +33,7 @@
 -->
 
 
-<body class="font-header bg-primary-SignBg">
+<body class="font-header bg-primary-SignBg relative">
 
 
     <nav class="navmb md:p-10">
@@ -224,7 +224,7 @@
     <footer class="text-white bg-primary-FootBg relative flex justify-center">
 
 
-        <div class="bg-primary-SignBg rounded-xl absolute -top-44 m-4 md:mx-44 desktop:mx-80 shadow-2xl flex flex-col gap-4 md:gap-8 items-center text-center px-10 pt-12 pb-8">
+        <div class="bg-primary-SignBg rounded-xl absolute -top-44 mx-6 md:mx-44 desktop:mx-80 shadow-2xl flex flex-col gap-4 md:gap-8 items-center text-center px-10 pt-12 pb-8">
 
             <h1 class="text-base text-center md:text-3xl font-bold">Get early access today</h1>
             <p class="testTitle md:text-sm md:px-20 desktop:px-8">
@@ -238,38 +238,75 @@
             </form>
         </div>
 
-        <div class="mt-40">
-          <div>
-          </div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <!--
-
-
-  
-
-  
-
- 
-
+        <div class="mt-48 mx-6 grid grid-cols-1 ">
+          <div class="flex flex-col gap-16">
+            <figure>
+                <img src="./images/logo.svg" alt="">
+            </figure>
+            <div class="flex gap-6 text-sm font-body mr-2">
+                <figure>
+                    <img src="./images/icon-location.svg" class="w-12" alt="">
+                </figure>
+                <p>
+                    
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
   dolore magna aliqua
+                </p>
+            </div>
+          </div>
+          <div class="font-body py-6 flex flex-col gap-6">
+            <div class="flex gap-6">
+                <figure>
+                    <img src="./images/icon-phone.svg" alt="">
+                </figure>
+                <p>
+                  +1-543-123-4567
+                </p>
+            </div>
 
-  +1-543-123-4567
-  example@fylo.com
+            <div class="flex gap-6">
+                <figure><img src="./images/icon-email.svg" alt=""></figure>
+                <p>
+                   
+                    example@fylo.com
+                </p>
+            </div>
+          </div>
+          <div class="font-body flex flex-col flex-wrap gap-16 mt-16">
+            <div class="flex flex-col gap-4 text-lg ">
+                <a href="">About Us</a>
+                <a href=""> Jobs</a>
+                <a href="">  Press</a>
+                <a href="">Blog</a>
+            </div>
+            <div class="flex flex-col gap-4 text-lg">
+                <a href="">Contact Us</a>
+                <a href="">Terms</a>
+                <a href="">Privacy</a>              
+                
+            </div>
+          </div>
+          
+          <div class="z-10">
+            <figure class="">
+             <svg class="fill-blue-500 w-40 h-40 hover:fill-accent-CyaneGrd  ">
+                <use href="#facebook"></use>
 
-  About Us
-  Jobs
-  Press
-  Blog
+             </svg>
+            </figure>
+            <figure></figure>
+            <figure></figure>
+          </div>
+        </div>
 
-  Contact Us
-  Terms
-  Privacy -->
+        <svg  xmlns="http://www.w3.org/2000/svg" class="ionicon absolute z-0" viewBox="0 0 512 512" >
+            <symbol id="facebook">
+             <title>Logo Facebook</title><path d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z" fill-rule="evenodd"/>
+         </symbol>
+         </svg>
     </footer>
+
+    
 </body>
 
 </html>
